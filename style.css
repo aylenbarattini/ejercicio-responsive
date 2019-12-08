@@ -26,7 +26,7 @@ body {
 }
 
 .content-container {
-    width: 800px;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -93,7 +93,7 @@ body {
 }
 
 .about-me {
-    width: 400px;
+    width: 50%;
 }
 
 .description {
@@ -127,6 +127,48 @@ body {
     color: #9E9E9E;
 }
 
+@media (max-width: 1200px) and (min-width:1100px) {
+    .timeline-container {
+        width: 50%;
+    }
+    .timeline-description {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1100px) {
+     .card-body {
+        padding: 0;
+    }
+    .content-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    .about-me {
+        justify-content: center;
+        width: 100%   
+    }
+    .info {
+        margin: 0;
+    }
+    .info-list {
+        padding: 0;
+    }
+    .description {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 95%;
+    }
+    .card {
+        width:100%;        
+    }
+}
 
 /* 
 ===========================================
@@ -135,7 +177,7 @@ body {
 */
 
 .timeline-container {
-    width: 380px;
+    width: calc(50%-30px);
     padding: 0 10px;
 }
 
